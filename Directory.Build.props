@@ -16,5 +16,10 @@
     <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net471'">$(MonoLibFolder)/4.7.1-api</FrameworkPathOverride>
     <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net472'">$(MonoLibFolder)/4.7.2-api</FrameworkPathOverride>
   </PropertyGroup>
+  <PropertyGroup>
+    <FscToolPath>c:\GitHub\dsyme\fsharp2\artifacts\bin\fsc\Release\net472</FscToolPath>
+    <FscToolExe>fsc.exe</FscToolExe>
+    <OtherFlags>--langversion:preview</OtherFlags>
+  </PropertyGroup>
 
 </Project>
