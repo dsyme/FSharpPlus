@@ -19,7 +19,7 @@
   <PropertyGroup>
     <FscToolPath>c:\GitHub\dsyme\fsharp2\artifacts\bin\fsc\Release\net472</FscToolPath>
     <FscToolExe>fsc.exe</FscToolExe>
-    <OtherFlags>--langversion:preview</OtherFlags>
+    <OtherFlags>--langversion:preview $(OtherFlags)</OtherFlags>
   </PropertyGroup>
 
 </Project>

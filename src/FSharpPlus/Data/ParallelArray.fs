@@ -52,5 +52,5 @@ type ParallelArray<'t> with
     #endif
     static member inline get_Zero () = Bounded (getZero ()) : parray<'m>
     #if !FABLE_COMPILER
-    static member inline (+) (x: parray<'m>, y: parray<'m>) = lift2 plus x y : parray<'m>
+    static member inline (+) (x: parray<'m>, y: parray<'m>) = lift2 (plus: 'm -> 'm -> 'm) x y : parray<'m>
     #endif
